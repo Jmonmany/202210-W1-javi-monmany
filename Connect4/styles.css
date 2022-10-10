@@ -1,0 +1,196 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: solid px; 
+    font-family: helvetica;
+}
+
+body {
+    background-image: url(Img/Wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+header {
+    
+    position: absolute;
+    text-align: center;
+    translate: 0px 50px;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.719);
+    background-color: transparent;
+    font-size: 50px;
+    -webkit-text-stroke: 2px #4ae20d;
+}
+
+#message {
+    position: absolute;
+    text-align: center;
+    translate: 0px 200px;
+    width: 100%;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+#main-div {
+    margin-top: 20px;
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.rules-container {
+    margin-left: 5px;
+    width: 15%;
+    max-height: 200px;
+    
+}
+
+.rules-container *{
+    overflow: hidden;
+}
+
+.rules-container:hover .rules{
+    background-color: rgba(250, 235, 215, 0.384);
+    height: 180px;
+}
+
+.rules-title p{
+    color: whitesmoke;
+    background-color: #49e20d8b;
+}
+.rules {
+    justify-content: center;
+    height: 0px;
+    background-color: rgba(255, 255, 255, 0.438);
+    border-bottom-right-radius: 5px;
+    transition: height 0.2s;
+}
+.rules p{
+    padding: 5px;
+    text-align: left;
+    display: -webkit-flex;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    justify-content: center;
+}
+
+.game {
+    
+    align-self: flex-end;
+    width: 650px;
+    height: 650px;
+    translate: -50px 30px;
+    background-image: url(Img/Table.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    
+    margin-bottom: 43px;
+    width: 88%;
+    height: 72.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+#winner {
+    display: none;
+    padding: 2px;
+    position: absolute;
+    align-self: center;
+    scale: 2;
+    color: black;
+    border: solid 1px;
+    border-radius: 20%;
+    background-color: rgba(240, 248, 255, 0.812);
+}
+
+.tile {
+    width: 63px;
+    height: 63px;
+    background-color: transparent;
+    border-radius: 50px;
+    margin: 7.5px;
+}
+
+.red-coin {
+    border-color: rgb(168, 13, 13);
+    background-image: radial-gradient( rgb(253, 6, 6),rgba(217, 79, 29, 0.914))
+}
+
+.yellow-coin {
+    border-color: rgb(207, 187, 13);
+    background-image: radial-gradient( rgb(255, 255, 0),rgba(255, 196, 0, 0.856))
+}
+
+.button-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+}
+
+#refresh-button {
+    background-image: url(Img/refresh-button.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#close-button {
+    background-image: url(Img/close-button.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+#play-button {
+    translate: 930px 250px;
+    background-image: url(Img/play-rounded-button.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+button:hover {
+    border: solid 2px;
+    border-radius: 5px;
+    color: whitesmoke;
+    justify-content: center;
+}
+
+
+#after-closing {
+    position: absolute;
+    scale: 0.5;
+    translate: -430px 50px;
+}
