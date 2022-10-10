@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasapalabra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>Pasapalabra</header>
+    <main>
+        <div class="explanation">
+            <span>WELCOME TO THE GAME OF PASAPALABRA!</span>
+            <p>The rules of the game are quite simple: <br><br>
+                The user will be prompted to answer with the words corresponding to those definitions. <br> 
+                There is an option to press the "PASAPALABRA" button to leave that question for the next round. <br><br>
+
+                This program is accent sensitive so words should be entered without accent marks.
+            </p>
+        </div>
+        <div class="game">
+            <div>
+                <span id="question"></span>
+                <div class="letterSet">
+                    <button data-letters id="0" class="letters">A</button>
+                    <button data-letters id="1" class="letters">B</button>
+                    <button data-letters id="2" class="letters">C</button>
+                    <button data-letters id="3" class="letters">D</button>
+                    <button data-letters id="4" class="letters">E</button>
+                    <button data-letters id="5" class="letters">F</button>
+                    <button data-letters id="6" class="letters">G</button>
+                    <button data-letters id="7" class="letters">H</button>
+                    <button data-letters id="8" class="letters">I</button>
+                    <button data-letters id="9" class="letters">J</button>
+                    <button data-letters id="10" class="letters">K</button>
+                    <button data-letters id="11" class="letters">L</button>
+                    <button data-letters id="12" class="letters">M</button>
+                    <button data-letters id="13" class="letters">N</button>
+                    <button data-letters id="14" class="letters">Ñ</button>
+                    <button data-letters id="15" class="letters">O</button>
+                    <button data-letters id="16" class="letters">P</button>
+                    <button data-letters id="17" class="letters">Q</button>
+                    <button data-letters id="18" class="letters">R</button>
+                    <button data-letters id="19" class="letters">S</button>
+                    <button data-letters id="20" class="letters">T</button>
+                    <button data-letters id="21" class="letters">U</button>
+                    <button data-letters id="22" class="letters">V</button>
+                    <button data-letters id="23" class="letters">W</button>
+                    <button data-letters id="24" class="letters">X</button>
+                    <button data-letters id="25" class="letters">Y</button>
+                    <button data-letters id="26" class="letters">Z</button>
+                </div>
+                <button data-pasapalabra class="controlButtons PASAPALABRA" >PASAPALABRA</button>
+                <button data-startOrSend class="controlButtons START">START</button><br>
+                <span id="message"></span>
+                <form id="Text" onmouseup="document.getElementById('answer').select()" style="display: none;">
+                    <label  id="inputText">What's your name?</label><br>
+                    <input value="" id="answer" type="text" placeholder="       Your answer here!">
+                </form> 
+            </div>
+        </div>
+    </main>
+    <footer id="score"></footer>
+    <script src="main.js"></script>
+</body>
+</html>

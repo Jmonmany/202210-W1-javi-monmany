@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+
+*{
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+border: solid px; 
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to right, #ffd166df, #ef476e8d);
+}
+header {
+    padding-top: auto;
+    font-size: 50px;
+}
+
+.explanation {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.game {
+    margin-top: 160px;
+     margin-bottom: 30px;
+}
+
+.controlButtons{
+    translate: 0 -50px;
+    padding: auto;
+    margin: 10px;
+    align-self: center;
+    border-radius: 30px;
+    transition: color 0.5s, background 0.5s;
+    font-size: 30px;
+    cursor: pointer;
+    min-height: 50px;
+  }
+  .controlButtons.START {
+    display: inline;
+    background-color: #8ac926da;
+    min-width: 130px;
+  }
+  .controlButtons.PASAPALABRA {
+    display: none;
+    background-color: #694c93d7;
+    min-width: 250px;
+  }
+  .controlButtons:hover, .controlButtons:focus {
+    color: whitesmoke;
+    background-color: transparent;
+    border: solid whitesmoke
+  }
+  /*.controlButtons:focus: aplicado también para navegación con el teclado*/
+  #message {
+    position: absolute;
+    margin-left: 48%;
+    margin-right: 50%;
+    font-size: larger;
+    font-weight: bold;
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  #inputText {
+    font-weight: bold;
+  }
+  #Text {
+    margin-left: 35%;
+    margin-right: 35%;
+    max-width: 1520px;
+    cursor: pointer;
+    scale: 1.5;
+    translate: 0 -170px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  #answer {
+    padding: 0 5px 0 5px;
+  }
+  #question {
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    translate: 0 30px;
+    margin-left: 37%;
+    margin-right: 35%;
+    display: -webkit-flex;
+    max-width: 500px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    justify-content: center;
+    height: 80px;
+  }
+  .letterSet {
+    position: relative;
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    padding: 0;
+    list-style: none;
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+
+  .letterSet > * {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1.25em;
+    height: 1.25em;
+    margin: -0.625em;
+  }
+  .letterSet > *:nth-of-type(1) {transform: rotate(270deg) translate(8em) rotate(-270deg); }
+  .letterSet > *:nth-of-type(2) {transform: rotate(283.3deg) translate(8em) rotate(-283.3deg); }
+  .letterSet > *:nth-of-type(3) {transform: rotate(296.6deg) translate(8em) rotate(-296.6deg); }
+  .letterSet > *:nth-of-type(4) {transform: rotate(309.9deg) translate(8em) rotate(-309.9deg); }
+  .letterSet > *:nth-of-type(5) {transform: rotate(323.2deg) translate(8em) rotate(-323.2deg); }
+  .letterSet > *:nth-of-type(6) {transform: rotate(336.5deg) translate(8em) rotate(-336.5deg); }
+  .letterSet > *:nth-of-type(7) {transform: rotate(349.8deg) translate(8em) rotate(-349.8deg); }
+  .letterSet > *:nth-of-type(8) {transform: rotate(362.8deg) translate(8em) rotate(-362.8deg); }
+  .letterSet > *:nth-of-type(9) {transform: rotate(376.1deg) translate(8em) rotate(-376.1deg); }
+  .letterSet > *:nth-of-type(10) {transform: rotate(389.4deg) translate(8em) rotate(-389.4deg); }
+  .letterSet > *:nth-of-type(11) {transform: rotate(402.7deg) translate(8em) rotate(-402.7deg); }
+  .letterSet > *:nth-of-type(12) {transform: rotate(416deg) translate(8em) rotate(-416deg); }
+  .letterSet > *:nth-of-type(13) {transform: rotate(429.3deg) translate(8em) rotate(-429.3deg); }
+  .letterSet > *:nth-of-type(14) {transform: rotate(442.6deg) translate(8em) rotate(-442.6deg); }
+  .letterSet > *:nth-of-type(15) {transform: rotate(455.9deg) translate(8em) rotate(-455.9deg); }
+  .letterSet > *:nth-of-type(16) {transform: rotate(469.2deg) translate(8em) rotate(-469.2deg); }
+  .letterSet > *:nth-of-type(17) {transform: rotate(482.5deg) translate(8em) rotate(-482.5deg); }
+  .letterSet > *:nth-of-type(18) {transform: rotate(495.8deg) translate(8em) rotate(-495.8deg); }
+  .letterSet > *:nth-of-type(19) {transform: rotate(509.1deg) translate(8em) rotate(-509.1deg); }
+  .letterSet > *:nth-of-type(20) {transform: rotate(522.4deg) translate(8em) rotate(-522.4deg); }
+  .letterSet > *:nth-of-type(21) {transform: rotate(535.7deg) translate(8em) rotate(-535.7deg); }
+  .letterSet > *:nth-of-type(22) {transform: rotate(549deg) translate(8em) rotate(-549deg); }
+  .letterSet > *:nth-of-type(23) {transform: rotate(562.3deg) translate(8em) rotate(-562.3deg); }
+  .letterSet > *:nth-of-type(24) {transform: rotate(575.6deg) translate(8em) rotate(-575.6deg); }
+  .letterSet > *:nth-of-type(25) {transform: rotate(588.9deg) translate(8em) rotate(-588.9deg); }
+  .letterSet > *:nth-of-type(26) {transform: rotate(602.2deg) translate(8em) rotate(-602.2deg); }
+  .letterSet > *:nth-of-type(27) {transform: rotate(615deg) translate(8em) rotate(-615deg); }
+    
+    .letters {
+        border-radius: 30px;
+        font-size: 40px;
+        background-color: #2e9de7;
+    }
+    .letters:hover{
+        color: whitesmoke;
+        background-color: #3079ded0;
+        transition: color 0.5s, background 0.5s;
+        border: solid whitesmoke
+    }
+
+    footer {
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      margin-top: 10%;
+    }
+    
