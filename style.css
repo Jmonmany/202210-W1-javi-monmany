@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    background-color: black;
+    color: azure;
+    border: solid px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a {
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+a:visited {
+    color: #10bccf;
+    text-decoration: none;
+}
+a:hover {
+    color: aquamarine;
+    text-decoration: underline;
+}
+a:active {
+    color: rgb(54, 243, 180);
+    text-decoration: solid;
+}
+ img {
+    border: solid;
+    width: 200px;
+    height: 200px;
+ }
