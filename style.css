@@ -1,15 +1,32 @@
 * {
     box-sizing: border-box;
-    background-color: black;
     color: azure;
-    border: solid px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+body {
+    background: radial-gradient(#100f42df, #190a0eeb);
+    background-size: 100px 100px;
+}
+header {
+    font-size: 2em;
+    margin: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgb(231, 12, 12);
+}
+
+span {
+    margin: 15px;
+    font-size: 1.5em;
+}
 .flex-container {
     display: flex;
     justify-content: space-around;
 }
-
+nav {
+    margin: 50px;
+    background-color: transparent;
+}
 div {
     display: flex;
     flex-direction: column;
@@ -22,19 +39,19 @@ a {
     text-decoration: none;
 }
 a:visited {
-    color: #10bccf;
+    color: #eef1f1;
     text-decoration: none;
 }
 a:hover {
-    color: aquamarine;
+    color: rgba(230, 47, 37, 0.818);
     text-decoration: underline;
 }
 a:active {
     color: rgb(54, 243, 180);
     text-decoration: solid;
 }
- img {
+img {
     border: solid;
     width: 200px;
     height: 200px;
- }
+}

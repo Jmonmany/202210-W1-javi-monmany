@@ -1,11 +1,11 @@
 # Week 1. Git & GitHub
 
-- Start and configure project. 
+-   Start and configure project.
 
-- Maintain constant backup with remote repository. 
+-   Maintain constant backup with remote repository.
 
-- First contact with Husky and hooks. 
+-   First contact with Husky and hooks.
 
-- Linking with Netlify. 
+-   Linking with Netlify.
 
 https://challengew1.netlify.app/
