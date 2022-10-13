@@ -51,7 +51,7 @@ a:active {
     text-decoration: solid;
 }
 img {
-    border: solid;
+    box-shadow: 0 0 10px rgba(230, 47, 37, 0.818);
     width: 200px;
     height: 200px;
 }

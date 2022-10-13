@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConnectFour</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1 id="header">ConnectFour</h1>
-    </header>
-    <span id="message">Press the play button to start!</span>
-    <div id="main-div">
-        <button id="play-button"></button>
-        
-        <div class="rules-container">
-            <div class="rules-title">
-                <p>Rules</p>
-            </div>
-            <div class="rules">
-                <p>
-                    1. Players must connect FOUR of the same colored discs in a row to win. <br><br>
-                    2. Only one piece is played at a time. <br><br>
-                    3. The game ends when there is a FOUR-in-a-row or a stalemate.<br><br>
-                    4. GameMode: Player VS Player
-                </p>
-            </div>
-        </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ConnectFour</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="/Img/favicon.png" />
+    </head>
+    <body>
+        <header>
+            <h1 id="header">ConnectFour</h1>
+        </header>
+        <span id="message">Press the play button to start!</span>
+        <div id="main-div">
+            <button id="play-button"></button>
 
-        <div class="game">
+            <div class="rules-container">
+                <div class="rules-title">
+                    <p>Rules</p>
+                </div>
+                <div class="rules">
+                    <p>
+                        1. Players must connect FOUR of the same colored discs
+                        in a row to win. <br /><br />
+                        2. Only one piece is played at a time. <br /><br />
+                        3. The game ends when there is a FOUR-in-a-row or a
+                        stalemate.<br /><br />
+                        4. GameMode: Player VS Player
+                    </p>
+                </div>
+            </div>
+
+            <div class="game">
                 <div id="board"><h1 id="winner"></h1></div>
+            </div>
+            <div class="button-panel">
+                <button id="close-button"></button>
+                <button id="refresh-button"></button>
+            </div>
         </div>
-        <div class="button-panel">
-            <button id="close-button"></button>
-            <button id="refresh-button"></button>
-        </div>
-    </div> 
-    <footer id="footer">
-        
-    </footer>
-<script src="main.js"></script>  
-</body>
+        <footer id="footer"></footer>
+        <script src="main.js"></script>
+    </body>
 </html>
